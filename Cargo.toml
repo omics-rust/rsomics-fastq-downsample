@@ -24,3 +24,9 @@ clap = { version = "4", features = ["derive"] }
 needletail = { version = "0.7", default-features = false, features = ["compression"] }
 rand = "0.8"
 
+[dev-dependencies]
+criterion = { version = "0.7", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "bench"
+harness = false
